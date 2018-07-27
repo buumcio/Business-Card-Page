@@ -118,10 +118,6 @@ button {
 	z-index: 2;
 }
 
-.id-box img, .id-bx h3, .id.box p {
-	animation: show 1.5s ease-in-out 0.5s forwards;
-}
-
 .media-box {
 	display: flex;
 	text-align: center;
@@ -139,7 +135,9 @@ button {
 	border-color: rgba(255, 255, 255, 0.7);
 }
 
+.id-box img, .id-box h3, .id-box p,
 .media-box h1, .media-box button, .nav {
+	opacity: 0;
 	animation: show 1.5s ease-in-out 0.5s forwards;
 }
 
@@ -226,20 +224,13 @@ button {
 		font-size: 18px;
 	}
 
-	.nav-item a {
-		font-size: 50px;
+	.bg {
+		animation: none;
+		opacity: 1;
 	}
 
-	@keyframes image-animation {
-	    0% {
-	        opacity: 1;
-	        transform: scale(1, 1);
-	    }
-	   
-	    100% {
-	        opacity: 1;
-	        transform: scale(1, 1)
-	    }
+	.nav-item a {
+		font-size: 50px;
 	}
 }
 
@@ -298,15 +289,10 @@ button {
 		display: none;
 	}
 
-	@keyframes show {
-	  0% {
-	    margin-top: 0px;
-	    opacity: 1;
-	  }
-	  100% {
-	    margin-top: 0px;
-	    opacity: 1;
-	  }
+	.id-box img, .id-box h3, .id-box p,
+	.media-box h1, .media-box button, .nav {
+		opacity: 1;
+		animation: none;
 	}
 }
 
