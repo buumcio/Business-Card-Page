@@ -18,19 +18,19 @@ h1 {
 	font-size: 80px;
 	color: #000;
 	font-weight: 100;
-	margin: 0 0 100px 0;
-	width: 500px;
+	margin: 0 0 90px 0;
+	width: 1000px;
 }
 
 h3 {
 	font-size: 48px;
 	font-weight: 300;
-	margin: 24px 0 0 0;
+	margin: 25px 0;
 	text-align: center;
 }
 
 p {
-	font-size: 23px;
+	font-size: 20px;
 	margin: 24px 60px;
 	font-weight: 100;
 }
@@ -43,9 +43,11 @@ a {
 
 img {
 	border-radius: 100%;
+	border: 2px solid #fff;
 	height: 300px;
 	width: 300px;
 	display: flex;
+	margin-bottom: 15px;
 	align-items: center;
 	justify-content: center;
 }
@@ -59,7 +61,7 @@ button {
 	height: 50px;
 	color: #fff;
 	font-size: 24px;
-	margin: 0 0 50px;
+	margin: 0 0 50px 0;
 }
 
 .container{
@@ -121,7 +123,7 @@ button {
 .media-box {
 	display: flex;
 	text-align: center;
-	width: 70%;
+	width: 74%;
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
@@ -130,7 +132,7 @@ button {
 }
 
 .id-box img, .id-box h3, .id-box p,
-.media-box h1, .media-box button, .nav {
+.media-box h1, .media-box #download, .nav {
 	opacity: 0;
 	animation: show 1.5s ease-in-out 0.5s forwards;
 }
@@ -190,6 +192,7 @@ button {
 
 	h1 {
 		font-size: 70px;
+		width: 700px;
 	}
 
 	h3 {
@@ -198,7 +201,6 @@ button {
 	}
 
 	p {
-		font-size: 20px;
 		margin: 10px 40px;
 	}
 }
@@ -213,6 +215,7 @@ button {
 	h1 {
 		font-size: 65px;
 		margin-bottom: 80px;
+		width: 500px;
 	}
 	
 	h3 {
@@ -220,7 +223,7 @@ button {
 	}
 
 	p {
-		font-size: 18px;
+		font-size: 16px;
 	}
 
 	button {
@@ -249,10 +252,7 @@ button {
 		font-size: 24px;
 	}
 
-	p {
-		font-size: 16px;
-	}
-
+	
 	button {
 		width: 150px;
 		height: 40px;
@@ -294,7 +294,7 @@ button {
 	}
 
 	.id-box img, .id-box h3, .id-box p,
-	.media-box h1, .media-box button, .nav {
+	.media-box h1, .media-box #download, .nav {
 		opacity: 1;
 		animation: none;
 	}
